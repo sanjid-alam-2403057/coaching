@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Modern Coaching Center</title>
+    <style>
+        /* CSS Styling - Makes it look modern */
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --dark: #1F2937;
+            --light: #F3F4F6;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 5%;
+            background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #4B5563;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Features/Services Section */
+        .features {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 4rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Can be upgraded to a hamburger menu later */
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Nexus Coaching</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#courses">Courses</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="btn" onclick="alert('Student portal coming soon!')">Student Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Empowering the Next Generation</h1>
+        <p>A modern, student-friendly learning environment designed to help you achieve your highest potential. Transparent reporting for guardians, engaging lessons for students.</p>
+        <br>
+        <a href="#contact" class="btn">Enroll Today</a>
+    </section>
+
+    <section id="about" class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>👨‍🏫 Expert Teachers</h3>
+                <p>Learn from modern educators who use interactive methods instead of boring lectures.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Guardian Portal</h3>
+                <p>Stay updated on your child's progress, attendance, and test scores automatically.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Tech-Driven</h3>
+                <p>Digital notes, online mock tests, and multimedia-rich classrooms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="features" style="background-color: white;">
+        <h2>Ready to Join?</h2>
+        <p>Contact us to learn more about our admission process.</p>
+        <br>
+        <p><strong>Email:</strong> info@nexuscoaching.com</p>
+        <p><strong>Phone:</strong> +880 1234-567890</p>
+        <br>
+        <p><em>* Replace these details with your actual contact information.</em></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nexus Modern Coaching Center. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
